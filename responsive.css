@@ -1,0 +1,55 @@
+/* responsive.css */
+
+@media (max-width: 992px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content, .hero-image {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .feature-cards, .disease-gallery, .stat-container, .demo-steps {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .card, .disease-item, .stat-item, .step {
+      width: 90%;
+      max-width: 500px;
+      margin: auto;
+    }
+  
+    .btn {
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav a {
+      padding: 0.5rem 0;
+      width: 100%;
+    }
+  
+    .logo h1 {
+      font-size: 1.2rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

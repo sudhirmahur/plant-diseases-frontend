@@ -1,0 +1,178 @@
+/* footer.css - Footer styling for Plant Disease Detection website */
+
+footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: var(--spacing-lg);
+    padding: 0 var(--spacing-md);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    margin-right: var(--spacing-sm);
+}
+
+.footer-logo h3 {
+    color: var(--text-light);
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.footer-column p {
+    margin-bottom: var(--spacing-md);
+    opacity: 0.8;
+}
+
+.footer-column h3 {
+    color: var(--text-light);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    padding-bottom: var(--spacing-xs);
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.footer-column ul {
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-column ul li a {
+    color: var(--text-light);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    opacity: 1;
+    color: var(--primary-light);
+}
+
+.social-icons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-round);
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-info li i {
+    margin-right: var(--spacing-sm);
+    margin-top: 5px;
+    color: var(--primary-light);
+}
+
+.newsletter h4 {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+    margin-bottom: 0;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--primary-dark);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    opacity: 0.7;
+}
+
+.footer-bottom ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    gap: var(--spacing-md);
+}
+
+.footer-bottom ul li a {
+    color: var(--text-light);
+    opacity: 0.7;
+    
+}

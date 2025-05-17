@@ -1,0 +1,111 @@
+/* header.css - Header styling for Plant Disease Detection website */
+
+header {
+    background-color: var(--background-white);
+    box-shadow: var(--shadow-sm);
+    padding: 1rem var(--spacing-lg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: var(--spacing-sm);
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: var(--text-dark);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    margin-left: var(--spacing-md);
+}
+
+nav ul li a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    background-color: rgba(46, 125, 50, 0.1);
+}
+
+nav ul li a.active {
+    color: var(--primary-color);
+    font-weight: 700;
+    position: relative;
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-sm);
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-white);
+        box-shadow: var(--shadow-md);
+        padding: var(--spacing-md);
+        z-index: 100;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: var(--spacing-xs) 0;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+}

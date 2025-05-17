@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plant Disease Detection AI</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo/Ai logo.png" alt="Plant Disease AI Logo">
+            <h1>Plant Disease <span>Detection</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="diseases.html">Plant Diseases</a></li>
+                <li><a href="detection.html">AI Detection</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Detect Plant Diseases with Advanced AI</h1>
+            <p>Our cutting-edge artificial intelligence system can identify over 50 common plant diseases with 98.7%
+                accuracy</p>
+            <div class="hero-buttons">
+                <a href="detection.html" class="btn primary">Try AI Detection</a>
+                <a href="about.html" class="btn secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/68544440-37ffdd80-03e9-11ea-8acd-3f3f9b6fc8b3.png"
+                alt="Plant Disease Detection Illustration">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>How Our AI Detection Works</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Take a Photo</h3>
+                <p>Simply take a clear photo of the affected plant leaf or stem using your smartphone or upload an
+                    existing image.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Analysis</h3>
+                <p>Our advanced neural network processes the image and compares it with our database of 50,000+ plant
+                    disease samples.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Get Results</h3>
+                <p>Receive accurate diagnosis within seconds, complete with recommended treatments and prevention tips.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Diseases Section -->
+    <section class="popular-diseases">
+        <h2>Common Plant Diseases</h2>
+        <div class="disease-gallery">
+            <div class="disease-item">
+                <img src="assets/images/Late Blight.jpeg" alt="Late Blight">
+                <h3>Late Blight</h3>
+                <p>Affects tomatoes and potatoes</p>
+                <a href="diseases.html#late-blight" class="learn-more">Learn More</a>
+            </div>
+            <div class="disease-item">
+                <img src="assets/images/Powdery Mildew.jpeg" alt="Powdery Mildew">
+                <h3>Powdery Mildew</h3>
+                <p>Affects cucurbits and many ornamentals</p>
+                <a href="diseases.html#powdery-mildew" class="learn-more">Learn More</a>
+            </div>
+            <div class="disease-item">
+                <img src="assets/images/Bacterial Spot.jpeg" alt="Bacterial Spot">
+                <h3>Bacterial Spot</h3>
+                <p>Affects peppers and tomatoes</p>
+                <a href="diseases.html#bacterial-spot" class="learn-more">Learn More</a>
+            </div>
+            <div class="disease-item">
+                <img src="assets/images/Apple Scab.jpeg" alt="Apple Scab">
+                <h3>Apple Scab</h3>
+                <p>Affects apple trees</p>
+                <a href="diseases.html#apple-scab" class="learn-more">Learn More</a>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="diseases.html" class="btn primary">View All 50+ Plant Diseases</a>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="stat-container">
+            <div class="stat-item">
+                <h3>98.7%</h3>
+                <p>Detection Accuracy</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Plant Diseases</p>
+            </div>
+            <div class="stat-item">
+                <h3>100,000+</h3>
+                <p>Successful Detections</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Available Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detection Demo Section -->
+    <section class="detection-demo">
+        <h2>See How It Works</h2>
+        <div class="demo-container">
+            <div class="demo-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Upload Your Plant Image</h3>
+                        <p>Take a clear photo of the affected plant part (leaf, stem, fruit) and upload it to our
+                            system.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Processing</h3>
+                        <p>Our neural network analyzes visual patterns, spots, discoloration and compares with known
+                            diseases.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Disease Identification</h3>
+                        <p>Receive detailed results showing the identified disease with confidence score.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Treatment Recommendations</h3>
+                        <p>Get actionable advice on how to treat the disease and prevent future occurrences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-image">
+                <img src="assets/images/AI  plant dieaise Detection Process.webp" alt="AI Detection Process">
+            </div>
+        </div>
+        <div class="demo-cta">
+            <a href="detection.html" class="btn primary">Try AI Detection Now</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Users Are Saying</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial testimonial-1 ">
+                <div class="testimonial-content">
+                    <p>"This AI detection tool saved my tomato crop! It identified late blight before it could spread to
+                        all my plants. The treatment recommendations were spot on."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="assets/images/Avtor user-1.jpeg" alt="User Avatar">
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Home Gardener</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" testimonial testimonial-2  ">
+                <div class="testimonial-content">
+                    <p>"As a commercial farmer, this tool has become indispensable. The early detection has reduced our
+                        crop losses by 35% this season. Highly recommended!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="assets/images/Avtor user-2.jpeg" alt="User Avatar">
+                    <div class="author-info">
+                        <h4>Michael Chen</h4>
+                        <p>Commercial Farmer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial testimonial-3">
+                <div class="testimonial-content">
+                    <p>"The accuracy is impressive. It correctly identified powdery mildew on my zucchini plants and
+                        gave me organic treatment options that worked perfectly."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="assets/images/Avtor user-3.avif" alt="User Avatar">
+                    <div class="author-info">
+                        <h4>Emily Rodriguez</h4>
+                        <p>Urban Garden Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-preview">
+        <h2>Latest from Our Blog</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="assets/images/ai doctor blogs-1.jpeg" alt="Blog Image">
+                <div class="post-meta">
+                    <span class="date">April 15, 2025</span>
+                    <span class="category">Prevention</span>
+                </div>
+                <h3>10 Ways to Prevent Common Garden Diseases</h3>
+                <p>Discover proactive measures you can take to keep your plants healthy and disease-free throughout the
+                    growing season.</p>
+                <a href="blog.html" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="assets/images/ai doctor blogs-2.jpeg" alt="Blog Image">
+                <div class="post-meta">
+                    <span class="date">April 10, 2025</span>
+                    <span class="category">Technology</span>
+                </div>
+                <h3>How AI is Revolutionizing Plant Pathology</h3>
+                <p>Explore the technological advances in artificial intelligence that are changing how we identify and
+                    manage plant diseases.</p>
+                <a href="blog.html" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="assets/images/ai doctor blogs-3.jpeg" alt="Blog Image">
+                <div class="post-meta">
+                    <span class="date">April 5, 2025</span>
+                    <span class="category">Treatment</span>
+                </div>
+                <h3>Organic vs. Chemical Treatments: Pros and Cons</h3>
+                <p>A comprehensive comparison of organic and chemical treatment options for common plant diseases.</p>
+                <a href="blog.html" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="blog.html" class="btn secondary">View All Blog Posts</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Protect Your Plants?</h2>
+            <p>Join thousands of gardeners and farmers who are using our AI to detect and treat plant diseases early.
+            </p>
+            <a href="signup.html" class="btn primary">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="assets/logo/Ai logo.png" alt="Plant Disease AI Logo">
+                    <h3>Plant Disease Detection</h3>
+                </div>
+                <p>Using advanced AI to help gardeners and farmers identify and treat plant diseases quickly and
+                    accurately.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="diseases.html">Plant Diseases</a></li>
+                    <li><a href="detection.html">AI Detection</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Plant Diseases</h3>
+                <ul>
+                    <li><a href="diseases.html#late-blight">Late Blight</a></li>
+                    <li><a href="diseases.html#powdery-mildew">Powdery Mildew</a></li>
+                    <li><a href="diseases.html#bacterial-spot">Bacterial Spot</a></li>
+                    <li><a href="diseases.html#apple-scab">Apple Scab</a></li>
+                    <li><a href="diseases.html#black-spot">Black Spot</a></li>
+                    <li><a href="diseases.html">View All...</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Botany Lane, Greenville</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@plantdiseaseai.com</li>
+                </ul>
+                <div class="newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Plant Disease Detection AI. All Rights Reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

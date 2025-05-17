@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Detection - Plant Disease Detection AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/detection.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="assets/logo/Ai logo.png" alt="Plant Disease AI Logo" />
+      <h1>Plant Disease <span>Detection</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="diseases.html">Plant Diseases</a></li>
+        <li><a href="detection.html" class="active">AI Detection</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="detection-tool">
+    <div class="container">
+      <h2>AI-Powered Plant Disease Detection</h2>
+      <p class="intro-text">Upload an image of your plant and let our AI analyze it for signs of disease. Receive instant detection results with treatment suggestions and confidence scores.</p>
+
+      <!-- Drag and Drop Upload -->
+      <div class="drag-drop-box" id="dropBox">
+        <p><strong>Drag and drop your plant image here</strong> or use the file input below.</p>
+      </div>
+
+      <div class="upload-section">
+        <form id="uploadForm">
+          <label for="plantImage">Select Image</label>
+          <input type="file" id="plantImage" accept="image/*" required />
+          <button type="submit" class="btn-1 primary">Start Detection</button>
+        </form>
+
+        <!-- Preview Section -->
+        <div id="previewContainer" class="preview hidden">
+          <h3><i class="fas fa-image"></i> Uploaded Image Preview</h3>
+          <div class="image-preview-box">
+            <img id="previewImage" src="" alt="Preview" />
+          </div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="resultContainer" class="result hidden">
+          <h3><i class="fas fa-leaf"></i> Detection Results</h3>
+          <div class="result-box">
+            <p><strong>Disease Identified:</strong> <span id="diseaseName">Powdery Mildew</span></p>
+            <p><strong>Confidence:</strong> <span id="confidence">95%</span></p>
+            <p><strong>Recommended Treatment:</strong></p>
+            <ul id="treatmentList">
+              <li>Apply sulfur-based organic fungicide</li>
+              <li>Trim infected leaves</li>
+              <li>Improve air circulation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes">
+        <h3>Tips for Best Accuracy</h3>
+        <ul>
+          <li>Ensure the image is well-lit and focused.</li>
+          <li>Avoid blurry or obstructed views of the leaf.</li>
+          <li>Use a plain background if possible.</li>
+        </ul>
+
+        <h3>Supported Plants</h3>
+        <p>Our AI supports over 50 plant species including tomatoes, potatoes, grapes, apples, cucumbers, and more. We're continuously adding new varieties.</p>
+
+        <h3>Privacy & Security</h3>
+        <p>Your uploaded images are used only for processing and are not stored. Your privacy is our priority.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- Footer -->
+  <footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <div class="footer-logo">
+                <img src="assets/logo/Ai logo.png" alt="Plant Disease AI Logo">
+                <h3>Plant Disease Detection</h3>
+            </div>
+            <p>Using advanced AI to help gardeners and farmers identify and treat plant diseases quickly and
+                accurately.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="diseases.html">Plant Diseases</a></li>
+                <li><a href="detection.html">AI Detection</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Plant Diseases</h3>
+            <ul>
+                <li><a href="diseases.html#late-blight">Late Blight</a></li>
+                <li><a href="diseases.html#powdery-mildew">Powdery Mildew</a></li>
+                <li><a href="diseases.html#bacterial-spot">Bacterial Spot</a></li>
+                <li><a href="diseases.html#apple-scab">Apple Scab</a></li>
+                <li><a href="diseases.html#black-spot">Black Spot</a></li>
+                <li><a href="diseases.html">View All...</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Botany Lane, Greenville</li>
+                <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                <li><i class="fas fa-envelope"></i> info@plantdiseaseai.com</li>
+            </ul>
+            <div class="newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Plant Disease Detection AI. All Rights Reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>
